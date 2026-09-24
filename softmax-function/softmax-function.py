@@ -4,7 +4,7 @@ def softmax(x: list) -> np.ndarray:
     """
     Returns stable softmax probabilities as a NumPy array matching the shape of x.
     """
-
+    
     x = np.asarray(x, dtype=float)
 
     if x.ndim == 1:
