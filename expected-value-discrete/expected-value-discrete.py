@@ -4,10 +4,8 @@ def expected_value_discrete(x: list, p: list) -> float:
     """
     Returns the expected value as a Python float.
     """
-    x = np.asarray(x, dtype=float)
-    p = np.asarray(p, dtype=float)
+    x = np.asarray(x)
+    p = np.asarray(p)
 
-    total = 0.0
-    total += np.sum(x*p)
-
-    return total
+    E = sum(x*p)
+    return float(E)
